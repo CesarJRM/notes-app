@@ -1,4 +1,4 @@
-
+import NoteForm from "./components/NoteForm";
 
 function App() {
   const [count, setCount] = useState(0)
