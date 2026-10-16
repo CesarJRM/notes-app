@@ -1,6 +1,6 @@
 
-@import 'talwincludes';
+@import 'tailwindcss';
 
 body{
-  @aply bg-purple-300
+  @apply bg-purple-900
 }

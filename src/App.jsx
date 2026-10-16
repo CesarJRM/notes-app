@@ -5,7 +5,14 @@ function App() {
 
   return (
     <>
-      <h1>Notas App</h1>
+      <div className="max-w-lg mx-auto mt-10 p-6 bg-gray-100 rounded-lg shadow-lg">
+      <h2 className="text-2x1 front-bold mb-4 text-center">Notes App</h2>
+
+      {/* Entradas controladas en formas*/}
+
+      <NoteForm></NoteForm>
+      </div>
+
     </>
   )
 }
