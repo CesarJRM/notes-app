@@ -25,7 +25,7 @@ const NoteForm = () => {
         if (!formData.title || !formData.de3scription) return
 
         //crear el objeto de la nota
-        const newNote = {id: Date.now() ...formData}
+        const newNote = {id: Date.now(), ...formData}
 
         //Agregar notas al estado (state)
         setNotas([newNota, ...notas])
@@ -39,7 +39,7 @@ const NoteForm = () => {
         })
     }
 
-    return{
+    return(
         <>
                  <buttom className="w-full bg-gray-100 border border-gray-300 text-purple-800 py-2 rounded-lg 
                 cursor-pointer hover: bg-purple-200 hover: border-purple-300 transition mb-4"
@@ -115,7 +115,7 @@ const NoteForm = () => {
          )}
         </>
          
-    }
+        )
 }
 
-export default Noteform:
+export default Noteform

@@ -1,4 +1,7 @@
+import { useState } from "react";
 import NoteForm from "./components/NoteForm";
+import NoteList from "./components/NoteList";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,8 +12,9 @@ function App() {
       <h2 className="text-2x1 front-bold mb-4 text-center">Notes App</h2>
 
       {/* Entradas controladas en formas*/}
+      <NoteForm notes={notes} setNotes={setNotes} />
+      <NoteList notes={notes} />
 
-      <NoteForm></NoteForm>
       </div>
 
     </>
